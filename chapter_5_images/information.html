@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Information on images</title>
+</head>
+
+<body>
+    <h1>Chapter 5 - Images:</h1>
+
+    <h3>How the browser works with images:</h3>
+
+    <ul>
+        <li>
+            When the browser sees an &lt;img&gt; element, the browser needs to retrieve the image from the server before it can be displayed on the page.
+        </li>
+        <li>
+            Browsers often retrieve the images concurrently. That is, the browser makes requests for multiple images at the same time. Given the speed of computers and networks, this all happens fast enough that you usually see a page display along with its images.
+        </li>
+    </ul>
+
+    <h3>How images work:</h3>
+
+    <p>
+        3 image formats commonly used on web - gif, jpeg and png
+    </p>
+    <ul>
+        <li>
+            JPEG - use for photos and complex graphics. It's a lossy format because to reduce the file size, it throws away some information about the image. Does not support transparency.
+        </li>
+        <li>
+            PNG or GIF - use for images with solid colours, logos and geometric shapes. Both PNG and GIF are lossless formats - they can be compressed to reduce file size but doesn't throw away anything. PNG provides 3 formats (as options for file size) - PNG-8,
+            PNG-24 and PNG-32.PNG can be transparent, as can GIF - but GIF only allows one colour to be set to 'transparent'
+        </li>
+    </ul>
+
+    <h3>How do I choose between GIF and PNG? It seems like they are very similar?</h3>
+
+    <ul>
+        <li>
+            PNG is the latest newcomer in graphic formats, and an interesting one because it can support both photos as well as logos. It also has more advanced transparency features than GIF. PNG is supported by all major browsers now, which wasn’t true just a few
+            years ago
+        </li>
+        <li>
+            To choose between GIF and PNG, there are a few things to consider. First, PNG has slightly better compression than GIF, so for an image with the same number of colors (i.e., up to 256), your PNG file may be smaller. If you need more colors than GIF can
+            offer, and JPEG isn’t an option (for instance, you need transparency), PNG is definitely the way to go. However, if you need animation, then you should go with GIF because GIF is the only widely supported format that supports animation.
+        </li>
+        <li>
+            More information on image formats (and the differences) on page 167.
+        </li>
+    </ul>
+
+<h3>The img element: An example:</h3>
+
+<ul>
+  <li>
+    &lt;img src="image/drinks.gif">
+  </li>
+  <li>
+    src attribute - The img element is void and therefore doesn't need a closing tag.
+  </li>
+  <li>
+    A void element is an element that doesn’t have any content in the HTML page to put the opening and closing tags around. True, an image is content, but the &lt;img&gt; element refers to the image. The image isn’t part of the HTML page itself. Instead, the image replaces the <img> element when the browser displays the page. And remember, HTML pages are purely text, so the image could never be directly part of the page. It’s always a separate thing.
+  </li>
+</ul>
+
+<h3>Using img element:</h3>
+
+<ul>
+  <li>
+    src attribute can be used for relative links within your project + you can also put a url in there (to link to another site).
+  </li>
+  <li>
+    Best practice is to use relative links for images on your own site + absolute path for images on other sites.
+  </li>
+  <li>
+    For example: &lt;img src="http://www.bbc.co.uk/images/football.png">
+  </li>
+</ul>
+
+</body>
+
+</html>
