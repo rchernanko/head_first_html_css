@@ -85,35 +85,71 @@
             Always give the visitor some indication of what information is in the image by using the alt attribute.
         </li>
         <li>
-          An exmaple: &lt;img src="http://wickedlysmart.com/hfhtmlcss/trivia/pencil.png" alt="The typical new pencil can draw a line 35 miles long.">
+            An exmaple: &lt;img src="http://wickedlysmart.com/hfhtmlcss/trivia/pencil.png" alt="The typical new pencil can draw a line 35 miles long.">
         </li>
         <li>
-          The alt attribute requires a bit of text that describes the image. If the image can’t be displayed, then this text is used in its place. It’s like if you were reading the web page over the phone to someone, the alt text is what you’d say in place of the image.
+            The alt attribute requires a bit of text that describes the image. If the image can’t be displayed, then this text is used in its place. It’s like if you were reading the web page over the phone to someone, the alt text is what you’d say in place of the
+            image.
         </li>
     </ul>
 
     <h3>Sizing up your images:</h3>
 
     <ul>
-      <li>
-        Always add width and height attributes to your image. This tells the browser up front the size of the image in your page.
-      </li>
-      <li>
-         &lt;img src="images/drinks.gif" width="48" height="100">
-      </li>
-      <li>
-        Width and height are specified using number of pixels.
-      </li>
-      <li>
-        On many browsers, if you supply the width and height in your HTML, then the browser can get a head start laying out the page before displaying it. If you don’t, the browser often has to readjust the page layout after it knows the size of an image. Remember, the browser downloads images after it downloads the HTML file and begins to display the page. The browser can’t know the size of the images before it downloads them unless you tell it.
-      </li>
-      <li>
-        We’ve said many times that we are supposed to use HTML for structure, and not for presentation. These feel like presentation attributes. Am I wrong? Well, it depends on how you are using these attributes. If you’re setting the image width and height to the correct dimensions, then it is really just informational. However, if you are using the width and height to resize the image in the browser, then you are using these attributes for presentation. In that case, it’s probably better to consider using CSS to achieve the same result.
-      </li>
-      <li>
-        A good rule of thumb is 96 pixels to every inch (on the screen)
-      </li>
+        <li>
+            Always add width and height attributes to your image. This tells the browser up front the size of the image in your page.
+        </li>
+        <li>
+            &lt;img src="images/drinks.gif" width="48" height="100">
+        </li>
+        <li>
+            Width and height are specified using number of pixels.
+        </li>
+        <li>
+            On many browsers, if you supply the width and height in your HTML, then the browser can get a head start laying out the page before displaying it. If you don’t, the browser often has to readjust the page layout after it knows the size of an image. Remember,
+            the browser downloads images after it downloads the HTML file and begins to display the page. The browser can’t know the size of the images before it downloads them unless you tell it.
+        </li>
+        <li>
+            We’ve said many times that we are supposed to use HTML for structure, and not for presentation. These feel like presentation attributes. Am I wrong? Well, it depends on how you are using these attributes. If you’re setting the image width and height to
+            the correct dimensions, then it is really just informational. However, if you are using the width and height to resize the image in the browser, then you are using these attributes for presentation. In that case, it’s probably better to consider
+            using CSS to achieve the same result.
+        </li>
+        <li>
+            A good rule of thumb is 96 pixels to every inch (on the screen)
+        </li>
     </ul>
+
+    <h3>An image is an inline element</h3>
+
+    <ul>
+        <li>
+            &lt;img&gt; is displayed as an inline element + so doesn't cause linebreaks to be inserted before or after the element is displayed
+        </li>
+        <li>
+            So if there are several images together in the HTML, the browser will fit them side by side if the browser window is wide enough.
+        </li>
+        <li>
+            Relating to page 195, the reason the larger photos weren’t side by side is because the browser didn’t have room to display them next to each other. Instead, it displayed them on top of each other. A browser always displays vertical space before and after
+            a block element, and if you look back at the screenshots, you’ll see the images are right on top of each other with no space in between. That’s another sign &lt;img&gt; is an inline element.
+        </li>
+    </ul>
+
+    <h3>How to link to something else when you click on an image:</h3>
+
+    <ul>
+        <li>
+            To link an image, you put the &lt;img&gt; element inside an <a> element, like below...
+        </li>
+        <li>
+          &lt;a href="html/seattle_downtown.html">&lt;img src="thumbnails/seattle_downtown.jpg" alt="An iPod in downtown Seattle, WA">&lt;/a&gt;
+        </li>
+    </ul>
+
+    <h3>Chapter summary</h3>
+
+    <p>
+      <img src="chapter_summary.png" alt="Summary of the chapter on images" />
+    </p>
 
 </body>
 
