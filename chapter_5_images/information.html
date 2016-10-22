@@ -49,33 +49,68 @@
         </li>
     </ul>
 
-<h3>The img element: An example:</h3>
+    <h3>The img element: An example:</h3>
 
-<ul>
-  <li>
-    &lt;img src="image/drinks.gif">
-  </li>
-  <li>
-    src attribute - The img element is void and therefore doesn't need a closing tag.
-  </li>
-  <li>
-    A void element is an element that doesn’t have any content in the HTML page to put the opening and closing tags around. True, an image is content, but the &lt;img&gt; element refers to the image. The image isn’t part of the HTML page itself. Instead, the image replaces the <img> element when the browser displays the page. And remember, HTML pages are purely text, so the image could never be directly part of the page. It’s always a separate thing.
-  </li>
-</ul>
+    <ul>
+        <li>
+            &lt;img src="image/drinks.gif">
+        </li>
+        <li>
+            src attribute - The img element is void and therefore doesn't need a closing tag.
+        </li>
+        <li>
+            A void element is an element that doesn’t have any content in the HTML page to put the opening and closing tags around. True, an image is content, but the &lt;img&gt; element refers to the image. The image isn’t part of the HTML page itself. Instead,
+            the image replaces the <img> element when the browser displays the page. And remember, HTML pages are purely text, so the image could never be directly part of the page. It’s always a separate thing.
+        </li>
+    </ul>
 
-<h3>Using img element:</h3>
+    <h3>Using img element:</h3>
 
-<ul>
-  <li>
-    src attribute can be used for relative links within your project + you can also put a url in there (to link to another site).
-  </li>
-  <li>
-    Best practice is to use relative links for images on your own site + absolute path for images on other sites.
-  </li>
-  <li>
-    For example: &lt;img src="http://www.bbc.co.uk/images/football.png">
-  </li>
-</ul>
+    <ul>
+        <li>
+            src attribute can be used for relative links within your project + you can also put a url in there (to link to another site).
+        </li>
+        <li>
+            Best practice is to use relative links for images on your own site + absolute path for images on other sites.
+        </li>
+        <li>
+            For example: &lt;img src="http://www.bbc.co.uk/images/football.png">
+        </li>
+    </ul>
+
+    <h3>Alt text:</h3>
+
+    <ul>
+        <li>
+            Always give the visitor some indication of what information is in the image by using the alt attribute.
+        </li>
+        <li>
+          An exmaple: &lt;img src="http://wickedlysmart.com/hfhtmlcss/trivia/pencil.png" alt="The typical new pencil can draw a line 35 miles long.">
+        </li>
+        <li>
+          The alt attribute requires a bit of text that describes the image. If the image can’t be displayed, then this text is used in its place. It’s like if you were reading the web page over the phone to someone, the alt text is what you’d say in place of the image.
+        </li>
+    </ul>
+
+    <h3>Sizing up your images:</h3>
+
+    <ul>
+      <li>
+        Always add width and height attributes to your image. This tells the browser up front the size of the image in your page.
+      </li>
+      <li>
+         &lt;img src="images/drinks.gif" width="48" height="100">
+      </li>
+      <li>
+        Width and height are specified using number of pixels.
+      </li>
+      <li>
+        On many browsers, if you supply the width and height in your HTML, then the browser can get a head start laying out the page before displaying it. If you don’t, the browser often has to readjust the page layout after it knows the size of an image. Remember, the browser downloads images after it downloads the HTML file and begins to display the page. The browser can’t know the size of the images before it downloads them unless you tell it.
+      </li>
+      <li>
+        We’ve said many times that we are supposed to use HTML for structure, and not for presentation. These feel like presentation attributes. Am I wrong? Well, it depends on how you are using these attributes. If you’re setting the image width and height to the correct dimensions, then it is really just informational. However, if you are using the width and height to resize the image in the browser, then you are using these attributes for presentation. In that case, it’s probably better to consider using CSS to achieve the same result.
+      </li>
+    </ul>
 
 </body>
 
