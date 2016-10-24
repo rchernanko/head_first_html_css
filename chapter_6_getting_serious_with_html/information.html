@@ -3,6 +3,7 @@
 
 <head>
     <title>Chapter 6 - Getting serious with HTML</title>
+    <meta charset="utf-8" />
 </head>
 
 <body>
@@ -44,6 +45,45 @@
     <p>
         <img src="images/html5_web_applications.png" alt="Useful knowledge of HTML5 and web applications" width="704" height="1114" />
     </p>
+
+    <h2>Validating your HTML:</h2>
+
+    <p>
+        Use the WC3 validator. <a href="http://validator.w3.org" title="Click to view the Wc3 Validator website">WC3 Validator</a>
+    </p>
+
+    <h2>Character encoding:</h2>
+
+    <p>
+        The character encoding tells the browser what kind of characters are being used in the page. For instance, pages can be written using encodings for English, Chinese, Arabic, and lots of other types of characters. We do this by adding one more line to
+        our HTML, called a &lt;meta&gt; tag.
+    </p>
+    <p>
+        Character encodings give us a way to represent all the letters, numbers and other symbols in our language on the computer. You might know of some of these encodings, like ASCII or even Morse code, and there are many other encodings out there. Luckily,
+        the world has now standardized on the Unicode character encoding. With Unicode, we can represent all languages with one type of encoding. But, given there are other encodings out there, we still need to tell the browser we’re using Unicode (or
+        another encoding of your choice).
+    </p>
+    <p>
+        This is done by doing this: &lt;meta charset="utf-8"&gt;
+    </p>
+
+    <ul>
+      <li>
+        “meta” means we’re going to tell the browser something about the page...
+      </li>
+      <li>
+        Just like other HTML tags, the meta tag has attributes...
+      </li>
+      <li>
+        The charset attribute is where we specify the character encoding.
+      </li>
+      <li>
+        “utf-8” is an encoding in the Unicode family of encodings (one of several). “utf-8” is the version we use for web pages.
+      </li>
+      <li>
+        The &lt;meta&gt; tag belongs in the &lt;head&gt; element (remember that the &lt;head&gt; contains information about your page).
+      </li>
+    </ul>
 </body>
 
 </html>
