@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chapter 6 - Getting serious with HTML</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Chapter 6 - Getting serious with HTML</h1>
+
+    <ul>
+        <li>
+            You should alawys tell the browser which version of HTML you are using...
+        </li>
+        <li>
+            You can tell the browser which version of HTML you're using with a doctype. It’s a little bit of markup you can use that goes at the very top of your HTML file.
+        </li>
+        <li>
+            By using a doctype, the browser is able to be more precise in the way it interprets and renders your pages.
+        </li>
+        <li>
+            In HTML5, it's just this... <code>!doctype html</code>, but with an opening and closing bracket...
+            <!-- Figure out how to display doctype in plain text -->
+        </li>
+        <li>
+            When the browser sees the above, it assumes you’re using standard HTML.
+        </li>
+        <li>
+            Going forward, rather than continue to crank out version 6, 7, 8 of HTML, the standards guys have turned the specification into a living standard that will document the technology as it evolves. So, no more version numbers.
+        </li>
+        <li>
+            You can write DOCTYPE or doctype. Both work.
+        </li>
+    </ul>
+
+    <p>An example:
+    </p>
+    <p>
+        <img src="images/doctype_example.png" alt="Example of the usage of doctype" width="596" height="226" />
+    </p>
+
+    <p>
+        HTML5 is not just for making web pages anymore; it's designed for making full-blown web applications. </p>
+    <p>
+        <img src="images/html5_web_applications.png" alt="Useful knowledge of HTML5 and web applications" width="704" height="1114" />
+    </p>
+
+    <h2>Validating your HTML:</h2>
+
+    <p>
+        Use the WC3 validator. <a href="http://validator.w3.org" title="Click to view the Wc3 Validator website">WC3 Validator</a>
+    </p>
+
+    <h2>Character encoding:</h2>
+
+    <p>
+        The character encoding tells the browser what kind of characters are being used in the page. For instance, pages can be written using encodings for English, Chinese, Arabic, and lots of other types of characters. We do this by adding one more line to
+        our HTML, called a &lt;meta&gt; tag.
+    </p>
+    <p>
+        Character encodings give us a way to represent all the letters, numbers and other symbols in our language on the computer. You might know of some of these encodings, like ASCII or even Morse code, and there are many other encodings out there. Luckily,
+        the world has now standardized on the Unicode character encoding. With Unicode, we can represent all languages with one type of encoding. But, given there are other encodings out there, we still need to tell the browser we’re using Unicode (or
+        another encoding of your choice).
+    </p>
+    <p>
+        This is done by doing this: &lt;meta charset="utf-8"&gt;
+    </p>
+
+    <ul>
+        <li>
+            “meta” means we’re going to tell the browser something about the page...
+        </li>
+        <li>
+            Just like other HTML tags, the meta tag has attributes...
+        </li>
+        <li>
+            The charset attribute is where we specify the character encoding.
+        </li>
+        <li>
+            “utf-8” is an encoding in the Unicode family of encodings (one of several). “utf-8” is the version we use for web pages.
+        </li>
+        <li>
+            The &lt;meta&gt; tag belongs in the &lt;head&gt; element (remember that the &lt;head&gt; contains information about your page).
+        </li>
+    </ul>
+
+    <h3>To Summarise - HTML5</h3>
+
+    <p>
+        What’s the big deal with HTML5 compared to HTML 4.01 anyway? &lt;video&gt; element), and others that will help you write better pages (we’ll be getting to those later in the book). Second, there are many new features that allow web developers to create
+        web applications with HTML5. Web applications are web pages that behave more like applications (like the ones you’re used to using on your laptop or mobile device) than static web pages. If you’re interested in creating web applications, then
+        after you’re all done with this book (cue shameless plug), you should check out Head First HTML5 Programming (O’Reilly). Finally, the HTML5 specification is a lot more robust than the specifications for the previous versions of HTML. Remember
+        how we said that the specification is now documenting common errors that web developers make? And helping browsers to know how to handle those errors? That means that web pages with errors on them don’t cause the havoc they used to, which is a
+        good thing for users. All in all, HTML5 is a big improvement over HTML 4.01, and well worth learning. We’ll get you up to speed quickly over the next few chapters.
+    </p>
+
+    <h3>Chapter summary</h3>
+
+    <p>
+        <img src="images/chapter_summary_1.png" alt="chapter summary image 1" />
+    </p>
+    <p>
+        <img src="images/chapter_summary_2.png" alt="chapter summary image 2" />
+    </p>
+    <p>
+        <img src="images/chapter_summary_3.png" alt="chapter summary image 3" />
+    </p>
+</body>
+
+</html>
